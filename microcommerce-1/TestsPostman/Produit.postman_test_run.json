@@ -1,0 +1,575 @@
+{
+	"id": "5f28f23f-17fb-b8fb-f7c0-f817fa671ec4",
+	"name": "Produit",
+	"allTests": [],
+	"timestamp": 1568973322554,
+	"collection_id": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+		"name": "Produit",
+		"description": "",
+		"order": [
+			"c37a1ae0-57d1-888d-2fb2-b0bbb2c2f525",
+			"ddf591a1-a73a-5633-7a3b-9b02bf26d345",
+			"581e1801-6e30-d391-fa21-706ba1be5a82",
+			"9af428b7-5e8a-b6d0-5572-9f97c9cac158",
+			"734e02d2-fc60-ff15-5a4c-572642a5a32f",
+			"2025bf51-5838-9cf8-8350-19afc9f2deca",
+			"638d0055-9978-c4a6-ec58-d9d812003fc8",
+			"e135c6ff-270f-1802-6bdc-99c86c18e46a"
+		],
+		"folders": [],
+		"folders_order": [],
+		"requests": [
+			{
+				"id": "2025bf51-5838-9cf8-8350-19afc9f2deca",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:9090/Products/add",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": " {\n       \"id\": \"\",\n        \"nom\": \" add Ordinateur \",\n        \"prix\": 200,\n        \"prixAchat\": 120\n    }",
+				"dataMode": "raw",
+				"version": 2,
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1568971296790,
+				"name": "Add",
+				"description": "",
+				"collectionId": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+				"responses": []
+			},
+			{
+				"id": "581e1801-6e30-d391-fa21-706ba1be5a82",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:9090/Products/AdminProduits",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": "  {\n        \n        \"nom\": \"Taf djiokfez \",\n        \"prix\": 10,\n        \"prixAchat\": 14\n    }",
+				"dataMode": "raw",
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1568915832101,
+				"name": "AdminProduits",
+				"description": "",
+				"collectionId": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+				"responses": []
+			},
+			{
+				"id": "638d0055-9978-c4a6-ec58-d9d812003fc8",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:9090/Products/update/1",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "PUT",
+				"collectionId": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+				"data": "{\n        \"id\" : 1 ,\n        \"nom\": \"Ordinateur update\",\n        \"prix\": 2005,\n        \"prixAchat\": 10020\n}",
+				"dataMode": "raw",
+				"name": "Update {id}",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1568970212620,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "734e02d2-fc60-ff15-5a4c-572642a5a32f",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:9090/Products/like/ble",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "GET",
+				"collectionId": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+				"data": null,
+				"dataMode": "params",
+				"name": "Produit Nom like { nom }",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1568969912518,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "9af428b7-5e8a-b6d0-5572-9f97c9cac158",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:9090/Products/prixLimit/400",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "GET",
+				"collectionId": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+				"data": null,
+				"dataMode": "params",
+				"name": "Produit prix >= {prix}",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1568969795805,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "c37a1ae0-57d1-888d-2fb2-b0bbb2c2f525",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:9090/Products/",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": null,
+				"dataMode": "params",
+				"version": 2,
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1568972748467,
+				"name": "Products",
+				"description": "",
+				"collectionId": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+				"responses": []
+			},
+			{
+				"id": "ddf591a1-a73a-5633-7a3b-9b02bf26d345",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:9090/Products/1",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "GET",
+				"collectionId": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+				"data": null,
+				"dataMode": "params",
+				"name": "FindById",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1568969339171,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "e135c6ff-270f-1802-6bdc-99c86c18e46a",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:9090/Products/trie",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "GET",
+				"collectionId": "b9f0c5f4-90a0-1937-325c-59acd5d764eb",
+				"data": null,
+				"dataMode": "params",
+				"name": "Trie",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1568970492509,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			}
+		],
+		"timestamp": 1568915496675,
+		"synced": false,
+		"syncedFilename": "",
+		"remote_id": 0,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"owner": "8353130",
+		"subscribed": false,
+		"createdAt": 1568915496675,
+		"updatedAt": 1568970492583,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"sharedWithTeam": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"id": "c37a1ae0-57d1-888d-2fb2-b0bbb2c2f525",
+			"name": "Products",
+			"url": "http://localhost:9090/Products/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				319
+			],
+			"allTests": [
+				{}
+			],
+			"time": 319,
+			"totalRequestTime": 319,
+			"iterationResults": {}
+		},
+		{
+			"id": "ddf591a1-a73a-5633-7a3b-9b02bf26d345",
+			"name": "FindById",
+			"url": "http://localhost:9090/Products/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				66
+			],
+			"allTests": [
+				{}
+			],
+			"time": 66,
+			"totalRequestTime": 66,
+			"iterationResults": {}
+		},
+		{
+			"id": "581e1801-6e30-d391-fa21-706ba1be5a82",
+			"name": "AdminProduits",
+			"url": "http://localhost:9090/Products/AdminProduits",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				35
+			],
+			"allTests": [
+				{}
+			],
+			"time": 35,
+			"totalRequestTime": 35,
+			"iterationResults": {}
+		},
+		{
+			"id": "9af428b7-5e8a-b6d0-5572-9f97c9cac158",
+			"name": "Produit prix >= {prix}",
+			"url": "http://localhost:9090/Products/prixLimit/400",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				54
+			],
+			"allTests": [
+				{}
+			],
+			"time": 54,
+			"totalRequestTime": 54,
+			"iterationResults": {}
+		},
+		{
+			"id": "734e02d2-fc60-ff15-5a4c-572642a5a32f",
+			"name": "Produit Nom like { nom }",
+			"url": "http://localhost:9090/Products/like/ble",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				46
+			],
+			"allTests": [
+				{}
+			],
+			"time": 46,
+			"totalRequestTime": 46,
+			"iterationResults": {}
+		},
+		{
+			"id": "2025bf51-5838-9cf8-8350-19afc9f2deca",
+			"name": "Add",
+			"url": "http://localhost:9090/Products/add",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": "A generic error message, given when no more specific message is suitable."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				360
+			],
+			"allTests": [
+				{}
+			],
+			"time": 360,
+			"totalRequestTime": 360,
+			"iterationResults": {}
+		},
+		{
+			"id": "638d0055-9978-c4a6-ec58-d9d812003fc8",
+			"name": "Update {id}",
+			"url": "http://localhost:9090/Products/update/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				53
+			],
+			"allTests": [
+				{}
+			],
+			"time": 53,
+			"totalRequestTime": 53,
+			"iterationResults": {}
+		},
+		{
+			"id": "e135c6ff-270f-1802-6bdc-99c86c18e46a",
+			"name": "Trie",
+			"url": "http://localhost:9090/Products/trie",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": "The request cannot be fulfilled due to bad syntax."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				38
+			],
+			"allTests": [
+				{}
+			],
+			"time": 38,
+			"totalRequestTime": 38,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 971,
+	"lifecycle": "done",
+	"willStop": false,
+	"requests": [
+		{
+			"name": "Products",
+			"id": "c37a1ae0-57d1-888d-2fb2-b0bbb2c2f525",
+			"url": "http://localhost:9090/Products/",
+			"time": 319,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "FindById",
+			"id": "ddf591a1-a73a-5633-7a3b-9b02bf26d345",
+			"url": "http://localhost:9090/Products/1",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "AdminProduits",
+			"id": "581e1801-6e30-d391-fa21-706ba1be5a82",
+			"url": "http://localhost:9090/Products/AdminProduits",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Produit prix >= {prix}",
+			"id": "9af428b7-5e8a-b6d0-5572-9f97c9cac158",
+			"url": "http://localhost:9090/Products/prixLimit/400",
+			"time": 54,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Produit Nom like { nom }",
+			"id": "734e02d2-fc60-ff15-5a4c-572642a5a32f",
+			"url": "http://localhost:9090/Products/like/ble",
+			"time": 46,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Add",
+			"id": "2025bf51-5838-9cf8-8350-19afc9f2deca",
+			"url": "http://localhost:9090/Products/add",
+			"time": 360,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": "A generic error message, given when no more specific message is suitable."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Update {id}",
+			"id": "638d0055-9978-c4a6-ec58-d9d812003fc8",
+			"url": "http://localhost:9090/Products/update/1",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Trie",
+			"id": "e135c6ff-270f-1802-6bdc-99c86c18e46a",
+			"url": "http://localhost:9090/Products/trie",
+			"time": 38,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": "The request cannot be fulfilled due to bad syntax."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		}
+	],
+	"synced": false
+}
